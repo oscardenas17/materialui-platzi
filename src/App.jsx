@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
 import Buscador from "./components/buscador/Buscador.jsx";
+import UserCard from "./layout/UserCard.jsx";
 
 import { getGitHubUser } from "./services/users";
 
@@ -45,6 +46,7 @@ function App() {
       }}
     >
       <Buscador inputUser={inputUser} setinputUser={setinputUser} />
+      <UserCard userState={userState}/>
     </Container>
   );
 }
