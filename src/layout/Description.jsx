@@ -9,13 +9,13 @@ const Description = (props) => {
   const { bio } = userState;
   return (
     <>
-      <Stack>
+      <Stack sx={{justifyContent: 'center'}}>
         {bio != null ? (
-          <Typography variant="h1" color="initial">
+          <Typography variant="body1" color="initial">
             {bio}
           </Typography>
         ) : (
-          <Typography>
+          <Typography variant="body1">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
             excepturi totam perferendis pariatur est obcaecati vel enim eius,
             quis nulla fugit possimus, cumque libero in ea, molestias cupiditate
