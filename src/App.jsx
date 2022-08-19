@@ -37,7 +37,7 @@ function App() {
       sx={{
         background: "whitesmoke",
         width: "80vw",
-        height: "500px",
+        height: "600px",
         borderRadius: "16px",
         marginTop: "40px",
         display: "flex",
