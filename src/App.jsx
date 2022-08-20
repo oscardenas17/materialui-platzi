@@ -15,7 +15,7 @@ function App() {
     const userSearched = await getGitHubUser(user)
 
     if(userState === 'octocat'){
-      localStorage.setItem("octocat", userSearched);
+      localStorage.setItem('octocat', userSearched);
     }
     
     if(userSearched.message === 'Not Found'){
@@ -25,7 +25,7 @@ function App() {
     }else{
       setUserState(userSearched)
     }
-    console.log(userSearched)
+    //console.log(userSearched)
   };
 
   useEffect(() => {
